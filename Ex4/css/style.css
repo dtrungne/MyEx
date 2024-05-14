@@ -1,0 +1,58 @@
+/* Định dạng tiêu đề và menu */
+header {
+  background-color: #666; /* Màu xám */
+  color:#f1eeee;
+  padding: 60px;
+  text-align: left; /* Căn lề trái */
+}
+
+#branding {
+  float: left; /* Đưa phần tiêu đề về phía trái */
+}
+
+#branding h1 {
+  margin: 0;
+}
+
+nav {
+  float: right; /* Đưa menu về phía phải */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #f1eeee; /* Màu chữ đen nhẹ */
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold; /* In đậm */
+  text-transform: uppercase; /* Chuyển thành chữ in hoa */
+}
+
+/* Khi hover qua menu */
+nav ul li a:hover {
+  color: #e8491d; /* Màu cam */
+}
+
+/* Các mục cuối cùng trong thanh menu */
+nav ul li:last-child a {
+  margin-right: 0; /* Loại bỏ margin phải cho mục cuối cùng */
+}
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+}
+header .highlight ,header .current a{
+  color:#e8491d;
+}
