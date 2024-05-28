@@ -1,51 +1,57 @@
-/* Định dạng tiêu đề và menu */
-header {
-  background-color: #666; /* Màu xám */
-  color:#f1eeee;
-  padding: 60px;
-  text-align: left; /* Căn lề trái */
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
 }
 
-#branding {
-  float: left; /* Đưa phần tiêu đề về phía trái */
+
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
 }
 
-#branding h1 {
-  margin: 0;
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
 }
 
-nav {
-  float: right; /* Đưa menu về phía phải */
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+header #branding{
+  float:left;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
+header #branding h1{
+  margin:0;
 }
 
-nav ul li a {
-  color: #f1eeee; /* Màu chữ đen nhẹ */
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold; /* In đậm */
-  text-transform: uppercase; /* Chuyển thành chữ in hoa */
+header nav{
+  float:right;
+  margin-top:10px;
 }
 
-/* Khi hover qua menu */
-nav ul li a:hover {
-  color: #e8491d; /* Màu cam */
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
 }
 
-/* Các mục cuối cùng trong thanh menu */
-nav ul li:last-child a {
-  margin-right: 0; /* Loại bỏ margin phải cho mục cuối cùng */
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
 }
+
+
 footer{
   padding:20px;
   margin-top:20px;
@@ -53,6 +59,10 @@ footer{
   background-color:#e8491d;
   text-align: center;
 }
-header .highlight ,header .current a{
-  color:#e8491d;
-}
+
+
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
